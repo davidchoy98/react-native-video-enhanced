@@ -1,0 +1,53 @@
+{
+  "name": "react-native-video-enhanced",
+  "version": "1.0.0",
+  "description": "React Native Video Component with Customizable GUI Controls",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rollup": "rollup -c --silent --bundleConfigAsCjs",
+    "test": "echo \"No test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:itsnubix/react-native-video-controls.git"
+  },
+  "keywords": [
+    "react-native-video",
+    "react-native-video-controls",
+    "react-native",
+    "react native video player"
+  ],
+  "author": "David Choy",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-native": "^0.64.4",
+    "react-native-gesture-handler": "^2.18.1",
+    "react-native-size-matters": "^0.4.1",
+    "react-native-vector-icons": "^10.1.0",
+    "react-native-video": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "@types/react-native-video": "^5.0.20",
+    "rollup": "^4.20.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.5.4"
+  }
+}
