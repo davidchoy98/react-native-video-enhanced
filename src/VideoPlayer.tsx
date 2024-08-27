@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from "react";
 import { TouchableWithoutFeedback, View } from "react-native";
-import Video, { OnLoadData, VideoProperties } from "react-native-video";
+import Video, { OnLoadData } from "react-native-video";
 
 // Components
 import { TopBar } from "./TopBar";
@@ -98,4 +98,6 @@ export const VideoPlayer: FC<VideoPlayerProps> = (props) => {
             </View>
         </TouchableWithoutFeedback>
     );
-}
+};
+
+VideoPlayer.displayName = 'VideoPlayer';

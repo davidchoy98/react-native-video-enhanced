@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
 import { VolumeBarProps } from "./VolumeBar.types";
-import { Slider } from "@rneui/themed";
+import { Slider } from "@miblanchard/react-native-slider";
 
 export const VolumeBar = ({volume, onVolumeChange}: VolumeBarProps): ReactElement => {
-    const handleChangeVolume = (volume: number): void => {
-        onVolumeChange(volume);
+    const handleChangeVolume = (volume: Array<number>): void => {
+        // onVolumeChange(volume);
     };
 
     return (
