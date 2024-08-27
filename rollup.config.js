@@ -30,22 +30,14 @@ export default [
             commonjs(),
             typescript({tsconfig: "./tsconfig.json"}),
             babel({
-                babelHelpers: 'runtime',
+                babelHelpers: 'bundled',
                 exclude: 'node_modules/**',
-                extensions: ['.js', '.jsx', '.ts', '.tsx'],
-                presets: [
-                    "@babel/preset-env",
-                    "@babel/preset-react",
-                    "@babel/preset-typescript"
-                ],
-                plugins: [
-                    "@babel/plugin-transform-runtime"
-                ]
+                extensions: ['.js', '.jsx', '.ts', '.tsx']
             }),
             postcss(),
-            terser.default(),
+            terser()
         ],
-        external: ["react"]
+        external: ["react", "react-native"]
     },
     {
         input: "src/VideoPlayerProps.d.ts",

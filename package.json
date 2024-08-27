@@ -1,53 +1,65 @@
 {
   "name": "react-native-video-enhanced",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "React Native Video Component with Customizable GUI Controls",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "rollup": "rollup -c --silent --bundleConfigAsCjs",
-    "test": "echo \"No test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+  "types": "dist/types.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:itsnubix/react-native-video-controls.git"
+  "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "test": "echo \"No test specified\" && exit 1"
   },
   "keywords": [
     "react-native-video",
     "react-native-video-controls",
     "react-native",
+    "react native video",
     "react native video player"
   ],
-  "author": "David Choy",
+  "author": "David Choy (https://github.com/davidchoy98)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidchoy98/react-native-enhanced.git"
+  },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-native": "^0.64.4",
+    "react-native": "0.64.4",
     "react-native-gesture-handler": "^2.18.1",
     "react-native-size-matters": "^0.4.1",
     "react-native-vector-icons": "^10.1.0",
-    "react-native-video": "^5.0.0"
+    "react-native-video": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.24.7",
+    "@react-native/normalize-color": "^2.1.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/react": "^18.3.3",
+    "@types/react": "17.0.1",
     "@types/react-native-vector-icons": "^6.4.18",
     "@types/react-native-video": "^5.0.20",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "eslint-plugin-react": "^7.35.0",
     "rollup": "^4.20.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0"
+  },
+  "dependencies": {
+    "@miblanchard/react-native-slider": "^2.6.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "react-native-paper": "^4.7.2"
   }
 }
